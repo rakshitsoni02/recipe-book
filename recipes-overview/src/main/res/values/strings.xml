@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyRecipe</string>
+    <string name="add_recipe">Add Recipe</string>
+    <string name="hint_title_recipe">Recipe Title</string>
+    <string name="hint_description_recipe">Recipe Description</string>
+    <string name="error_invalid_input">Invalid Information, Please check Inputs..</string>
+</resources>

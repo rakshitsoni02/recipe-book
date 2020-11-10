@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/f_title_edit_text"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_horizontal"
+        android:layout_marginVertical="@dimen/padding_half"
+        android:background="@drawable/bg_edit_text_border"
+        android:hint="@string/hint_title_recipe"
+        android:minHeight="@dimen/icon_size"
+        android:padding="@dimen/padding_half" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/f_description_edit_text"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_horizontal"
+        android:layout_marginVertical="@dimen/padding_half"
+        android:background="@drawable/bg_edit_text_border"
+        android:gravity="top|start"
+        android:hint="@string/hint_description_recipe"
+        android:minHeight="@dimen/image_size"
+        android:padding="@dimen/padding_half" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/f_container_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_horizontal"
+            android:layout_marginEnd="@dimen/d4"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+</LinearLayout>

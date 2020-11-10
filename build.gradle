@@ -1,0 +1,82 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        // Android SDK version
+        androidMinSdkVersion = 23
+        androidTargetSdkVersion = 30
+        androidCompileSdkVersion = 30
+
+        //Kotlin
+        kotlinVersion = '1.4.10'
+
+        // KTX
+        coreKtxVersion = "1.3.2"
+        fragmentKtxVersion = "1.2.5"
+        liveDataKtx = '2.2.0'
+        coroutinesVersion = '1.3.9'
+
+
+        //Android library
+        androidGradlePlugin = '4.1.0'
+        supportVersion = '1.2.0'
+        recyclerViewVersion = '1.1.0'
+        cardViewVersion = '1.0.0'
+        lifecycleVersion = "2.2.0"
+        googleMaterial = '1.2.1'
+        roomVersion = "2.2.5"
+
+        // Networking
+        retrofitVersion = '2.9.0'
+        okHttpVersion = '4.7.2'
+        curlVersion = '0.6.0'
+        gsonVersion = '2.8.6' //https://github.com/google/gson/blob/master/CHANGELOG.md
+
+        // Hilt + Dagger2
+        hiltAndroidVersion = "2.29.1-alpha"
+        hiltViewModelVersion = "1.0.0-alpha02"
+
+        // Testing
+        jUnitVersion = '4.13'
+        androidjUnitVersion = '1.1.2'
+        mockitoKotlinVersion = '2.2.0'
+        archTestingVersion = '2.1.0'
+        espressoVersion = '3.1.0'
+        testRunnerVersion = '1.0.1'
+        archTestingVersion = '2.1.0'
+        kotlin_version = '1.4.10'
+
+        // Debug
+        timberVersion = '4.7.1'
+
+        // Coil
+        coilVersion = "0.11.0"
+    }
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$androidGradlePlugin"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltAndroidVersion"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = "1.8"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

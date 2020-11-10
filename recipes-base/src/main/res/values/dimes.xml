@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_horizontal">16dp</dimen>
+    <dimen name="padding_half">8sp</dimen>
+    <dimen name="margin_vertical">16dp</dimen>
+    <dimen name="chart_height">250dp</dimen>
+    <dimen name="d0_eighth">1dp</dimen>
+    <dimen name="d0_third">3dp</dimen>
+    <dimen name="d4">32dp</dimen>
+
+
+    <!-- List style -->
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="normal_padding">10dp</dimen>
+    <dimen name="textview_size_normal">14dp</dimen>
+    <dimen name="image_size">180dp</dimen>
+    <dimen name="textview_size_small">1dp</dimen>
+    <dimen name="image_thumbnail">144dp</dimen>
+</resources>

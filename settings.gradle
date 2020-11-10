@@ -1,0 +1,4 @@
+include ':recipes-overview'
+include ':recipes-base'
+include ':app'
+rootProject.name = "recipe-browser"
